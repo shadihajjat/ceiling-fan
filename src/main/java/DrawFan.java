@@ -19,7 +19,7 @@ public class DrawFan {
     protected void draw(Graphics g, int startA1,int startA2,int startA3){
         g2d=(Graphics2D) g;
         g2d.draw(line);
-        g2d.fillOval(390,190,20,20);
+        g2d.fillOval(385,185,30,30);
         g2d.fillArc(250,50,300,300,startA1, 30);
         g2d.fillArc(250,50,300,300,startA2, 30);
         g2d.fillArc(250,50,300,300,startA3, 30);

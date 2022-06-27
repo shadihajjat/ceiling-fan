@@ -16,7 +16,7 @@ public class FanControl extends JPanel implements FanRunnable {
     private int startA2=160;
     private int startA3=280;
     private Timer timer;
-    private int delay=210;
+    private int delay=180;
     private int speed=1;
     private int mode =1;
     private DrawFan drawFan=new DrawFan();
@@ -82,7 +82,7 @@ public class FanControl extends JPanel implements FanRunnable {
         }
         else {
             if (!timer.isRunning()) timer.restart();
-            timer.setDelay(delay / (speed*2));
+            timer.setDelay(delay / (speed));
         }
     }
 
